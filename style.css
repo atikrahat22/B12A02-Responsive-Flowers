@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----nav----*/
+nav {
+  display: flex;
+  width: 1140px;
+  height: 71px;
+  justify-content: space-between;
+  gap: 560px;
+  margin: 0 auto;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding-top: 27px;
+  gap: 24px;
+}
+.nav-list :nth-child(2),
+.nav-list :nth-child(3) {
+  color: rgb(137, 135, 161);
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: rgb(37, 36, 50);
+}
+.nav-list a:hover {
+  color: rgb(230, 138, 85);
+}
+
+/*-----section----*/
+
+.section {
+  display: flex;
+  width: 100%;
+  padding-top: 120px;
+  width: 1140px;
+  margin: 0 auto;
+}
+.section-one {
+  flex: 1;
+}
+.section-one h1 {
+  font-family: "Noto Serif";
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 89px;
+  line-height: 89px;
+}
+.section-one p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  padding-bottom: 120px;
+  font-family: "Inter";
+}
+.section-one-fresh-clr {
+  color: rgb(233, 90, 8);
+}
+
+/*--main part */
+
+/*---our-plants---*/
+
+.main {
+  width: 1140px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.our-plants {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.our-plants h1 {
+  font-family: "Noto Serif";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 68px;
+  padding-bottom: 18px;
+}
+.our-plants p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  width: 888px;
+  margin: 0 auto;
+}
+
+/*   card   */
+
+.card-main{
+  height: 485px;
+  width: 270px;
+  display: flex; 
+  flex-direction: column;
+}
+ 
