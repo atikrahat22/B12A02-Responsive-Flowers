@@ -32,10 +32,10 @@
         <img src="./assets/logo.png" alt="" />
         <ul class="nav-list">
           <li><a href="">Home</a></li>
-          <li><a href="">Shop</a></li>
-          <li><a href="">About us</a></li>
+          <li><a href=""><span class="span-1">Shop</span></a></li>
+          <li><a href=""><span class="span-2">About us</span></a></li>
           <li>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a>
           </li>
         </ul>
       </nav>
@@ -160,7 +160,7 @@
       </section>
       <!--Latest  Deals-->
 
-      <section class="">
+      <section class="Latest-Deals-margin">
         <div class="our-plants Latest-Deals">
           <h1><span class="section-one-fresh-clr">Latest</span> Deals</h1>
           <p>
@@ -172,15 +172,15 @@
         <div class="card-container">
           <div class="promo-card" id="first-card">
             <div class="card-content">
-              <h1 >60% Off | Bloom Plant</h1>
+              <h1>60% Off | Bloom Plant</h1>
               <a href="" class="shop-now">Shop Now</a>
             </div>
           </div>
 
           <div class="promo-card card-content-header" id="second-card">
             <div class="card-content">
-              <h1 class="">25% Off | Zabo Plant</h1>
-              <a href="" class="shop-now">Shop Now</a>
+              <h1 class="card-content-second">25% Off | Zabo Plant</h1>
+              <a href="" class="shop-now card-content-shop ">Shop Now</a>
             </div>
           </div>
 
@@ -192,11 +192,79 @@
           </div>
         </div>
       </section>
-      <section class="last-banner">
-        <div>
 
+      <!----Join Section---->
+
+      <section class="newsletter-section" aria-label="">
+        <div class="newsletter-container">
+          <h2 class="newsletter-heading">Join the colorful Bunch</h2>
+          <form class="newsletter-form" method="POST" action="/subscribe">
+            <label for="email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Write email"
+              required
+              aria-required="true"
+            />
+            <button type="submit" class="newsletter-button">Subscribe</button>
+          </form>
         </div>
       </section>
     </main>
+    <footer class="flower-footer">
+      <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-brand">
+          <img
+            src="./assets/logo.png"
+            alt="Tango Flowers"
+            class="footer-logo"
+          />
+          <p class="footer-description">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop.
+          </p>
+        </div>
+
+       
+        <div class="footer-links-grid">
+          
+          <div class="footer-column">
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          
+          <div class="footer-column">
+            <ul class="footer-links">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+        </div>
+
+        
+        <div class="footer-social">
+          <a href="#"
+            ><img src="./assets/icon-linkedin.png" alt="LinkedIn"
+          /></a>
+          <a href="#"><img src="./assets/icon-twitter.png" alt="Twitter" /></a>
+          <a href="#"
+            ><img src="./assets/icon-facebook.png" alt="Facebook"
+          /></a>
+          <a href="#"><img src="./assets/icon-youtube.png" alt="YouTube" /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
