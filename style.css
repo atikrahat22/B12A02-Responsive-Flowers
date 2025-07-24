@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: none;
+}
+body {
+  background: none;
 }
 .btn-primary {
   border: none;
@@ -19,6 +23,9 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 19px;
+}
+.btn-primary:hover {
+  background-color: rgb(87, 32, 0);
 }
 /*----nav----*/
 nav {
@@ -46,7 +53,7 @@ nav {
   color: rgb(37, 36, 50);
 }
 .nav-list a:hover {
-  color: rgb(230, 138, 85);
+  color: rgb(233, 90, 8);
 }
 
 /*-----section----*/
@@ -161,6 +168,7 @@ nav {
   align-items: center;
   margin-top: 30px;
 }
+
 .f-p-lover h1 {
   position: static;
   width: 540px;
@@ -199,6 +207,7 @@ nav {
   position: relative;
   display: block;
 }
+
 .badge-img {
   width: 286px;
   height: auto;
@@ -208,15 +217,92 @@ nav {
   height: auto;
   z-index: 2;
   animation: spin-pause 2s linear infinite;
+  background-color: transparent;
 }
 @keyframes spin-pause {
   0% {
-    transform: rotate(0deg); 
+    transform: rotate(0deg);
   }
   50% {
-    transform: rotate(360deg); 
+    transform: rotate(360deg);
   }
   100% {
-    transform: rotate(360deg); 
+    transform: rotate(360deg);
   }
+}
+
+/*Latest  Deals*/
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 28px;
+  height: 200px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.promo-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+#first-card {
+  background-image: url("./assets/deal-bloom.png");
+  color: (0, 0, 0, 0.4);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#second-card {
+  background-image: url("./assets/deal-zabo.png");
+  color: (0, 0, 0, 0.4);
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 2;
+  height: calc(200px * 2 + 10px);
+}
+
+#third-card {
+  background-image: url("./assets/deal-ana.png");
+  color: (0, 0, 0, 0.4);
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.card-content h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Noto Serif";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.shop-now {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.shop-now:hover {
+  color: rgb(233, 90, 8);
+  transform: translateY(-2px);
+}
+.Latest-Deals {
+  margin-top: 133px;
+  margin-bottom: 120px;
 }
