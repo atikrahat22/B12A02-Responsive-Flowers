@@ -218,7 +218,7 @@ nav {
     
 }
 
-}
+
 .flower-store-img {
     width: 100%; 
     height: auto; 
@@ -248,8 +248,7 @@ nav {
 .f-p-lover {
     flex: 1;
     max-width: 540px; 
-    margin-left: 50px; 
-    margin-top: 30px;
+    margin: 0;
 }
 
 .f-p-lover h1 {
@@ -369,7 +368,7 @@ nav {
     margin-bottom: 10px; 
 }
 
-.card-content .card-content-second {
+.card-content .card-content-second  {
     font-size: 50px;
     font-weight: 650;
     line-height: 1.2; 
@@ -454,7 +453,9 @@ nav {
     border-radius: 4px 0 0 4px; 
     min-width: 0; 
 }
-
+.newsletter-button{
+    width: 186px;
+}
 .newsletter-form button {
     padding: 13px 30px;
     background-color: #e95a08;
@@ -462,7 +463,7 @@ nav {
     border: none;
     border-radius: 0 4px 4px 0; 
     font-family: "Inter", sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -555,446 +556,240 @@ nav {
 }
 
 /* --- Responsive Styles (576px and below) --- */
-@med```css
 @media screen and (max-width: 576px) {
+    
     .span-home,
     .span-1,
     .span-2 {
         display: none;
     }
     .badge-img {
-        display: none;
+        display: none; 
     }
 
+    /* text adjustments */
     .section-one-h,
-    .our-plants-h1,
     .our-plants-h,
     .newsletter-section h2 {
-        font-size: 36px;
+        font-size: 36px; 
         line-height: 1.3;
     }
 
     .section-one-p,
-    .our-plants p,
     .f-p-lover li {
-        font-size: 16px;
+        font-size: 16px; 
         line-height: 1.5;
-        text-align: left;
-        max-width: 100%;
+        text-align: left; 
+        max-width: 100%; 
     }
-
-    nav {
-        height: auto;
-        padding: 15px 20px;
-        margin: 16px auto;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-    nav img {
-        margin-bottom: 10px;
-    }
-    .nav-list {
-        width: 100%;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .section {
-        flex-direction: column-reverse;
-        padding: 30px 20px;
+    
+    .our-plants p{
         text-align: center;
-        padding-top: 30px;
-    }
-    .section-one {
-        order: 2;
-        padding-right: 0;
-        padding-top: 20px;
-    }
-    .section-one-h, .section-one-p {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-    }
-    .mobile-only-img {
-        order: 1;
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .our-plants {
-        padding: 40px 20px;
-        margin-top: 40px;
-        width: 100%;
-    }
-    .our-plants p {
-        width: auto;
-    }
-
-    .card {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        margin: 20px auto;
-        padding: 0 15px;
-    }
-
-    .card-main {
-        width: 100%;
-        padding-bottom: 0;
-    }
-    .card-main img {
-        width: 100%;
-        height: auto;
-        max-height: 200px;
-        object-fit: contain;
-        margin-bottom: 10px;
-    }
-    .btn-primary {
-        height: 40px;
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .lover {
-        flex-direction: column;
-        margin: 40px auto;
-        gap: 20px;
-        padding: 0 20px;
-    }
-    .flower-container {
-        max-width: 100%;
-    }
-    .f-p-lover {
-        max-width: 100%;
-        text-align: center;
-    }
-    .f-p-lover h1 {
-        text-align: center;
-        width: auto;
-        margin: 0 auto 20px;
-    }
-    .f-p-lover ul {
-        padding-left: 0;
-        list-style-position: inside;
-        text-align: left;
-    }
-    .f-p-lover li {
-        width: auto;
-        margin: 0 auto 10px;
-    }
-
-    .Latest-Deals-margin {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 0 15px;
-    }
-
-    .Latest-Deals h1, .Latest-Deals p {
-        font-size: 36px;
-        line-height: 1.3;
-        width: auto;
-    }
-
-    .card-container {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        gap: 15px;
-    }
-
-    #first-card,
-    #second-card,
-    #third-card {
-        grid-column: 1;
-        grid-row: auto;
-        height: 180px;
-        width: 100%;
-    }
-    #second-card {
-        height: 180px;
-    }
-
-    .card-content h1 {
-        font-size: 24px;
-    }
-    .card-content .card-content-second {
-        font-size: 36px;
-        margin-bottom: 10px;
-    }
-    .card-content .card-content-shop {
-        font-size: 16px;
-    }
-
-    .newsletter-section {
-        min-height: 350px;
-        padding: 30px 20px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .newsletter-section h2 {
-        font-size: 32px;
-        max-width: 100%;
-    }
-    .newsletter-form {
-        flex-direction: column;
-        gap: 10px;
-        max-width: 300px;
-        height: auto;
-    }
-    .newsletter-form input,
-    .newsletter-form button {
-        border-radius: 4px;
-        width: 100%;
-        padding: 12px 20px;
-    }
-    .newsletter-form input {
-        text-align: center;
-    }
-
-    .flower-footer {
-        padding: 30px 20px;
-    }
-
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 0;
-        text-align: center;
-    }
-    .footer-brand,
-    .footer-links-grid,
-    .footer-social {
-        max-width: 100%;
-        justify-content: center;
-        margin: 0 auto;
-    }
-    .footer-logo {
-        margin: 0 auto 15px;
-    }
-    .footer-description {
-        text-align: center;
-        font-size: 13px;
-    }
-    .footer-links-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .footer-column h3 {
-        margin-bottom: 15px;
-        font-size: 15px;
-    }
-    .footer-social {
-        gap: 24px;
-    }
-    .footer-social img {
-        width: 30px;
-        height: 30px;
-    }
-}
-```
-ia screen and (max-width: 576px) {
-    /* Hide specific elements on mobile */
-    .span-home,
-    .span-1,
-    .span-2 {
-        display: none;
-    }
-    .badge-img {
-        display: none; /* Explicitly hide badge image on small screens */
-    }
-
-    /* General text adjustments */
-    .section-one-h,
-    .our-plants-h1,
-    .our-plants-h,
-    .newsletter-section h2 {
-        font-size: 36px; /* Smaller headings */
-        line-height: 1.3;
-    }
-
-    .section-one-p,
-    .our-plants p,
-    .f-p-lover li {
-        font-size: 16px; /* Smaller body text */
+         font-size: 16px; 
         line-height: 1.5;
-        text-align: left; /* Adjust alignment for paragraphs in some sections */
-        max-width: 100%; /* Ensure paragraphs wrap */
+        
+        max-width: 100%; 
     }
 
     /* Nav adjustments */
     nav {
-        height: auto; /* Auto height */
-        padding: 15px 20px; /* More padding for touch targets */
-        margin: 16px auto; /* Center with auto margin */
-        flex-wrap: wrap; /* Allow nav items to wrap */
-        justify-content: center; /* Center nav items */
-        gap: 15px; /* Smaller gap */
+        height: auto; 
+        padding: 15px 20px; 
+        margin: 16px auto; 
+        
+        gap: 15px; 
     }
     nav img {
-        margin-bottom: 10px; /* Space below logo if wraps */
+        margin-bottom: 10px; /
     }
     .nav-list {
-        width: 100%; /* Full width for list on mobile */
-        justify-content: center; /* Center nav links */
-        gap: 15px; /* Smaller gap */
+        width: 100%; 
+        justify-content: center; 
+        gap: 15px; 
     }
 
     /* Hero Banner adjustments */
     .section {
-        flex-direction: column-reverse; /* Image above text on mobile */
-        padding: 30px 20px; /* Reduced padding */
-        text-align: center; /* Center align text in banner */
+        flex-direction: column; 
+        padding: 30px 20px; 
+        text-align: center; 
         padding-top: 30px;
     }
     .section-one {
-        order: 2; /* Ensure text is below image in flex-direction: column-reverse */
-        padding-right: 0; /* Remove right padding */
-        padding-top: 20px; /* Space between image and text */
+        order: 2; 
+        padding-right: 0; 
+        padding-top: 20px; 
     }
     .section-one-h, .section-one-p {
-        text-align: center; /* Center align heading and paragraph */
+        text-align: left; 
         margin-left: auto;
         margin-right: auto;
-        width: auto; /* Allow natural wrapping */
+        width: auto; 
     }
     .mobile-only-img {
-        order: 1; /* Image first */
-        width: 100%; /* Image takes full width */
-        height: auto; /* Maintain aspect ratio */
+        order: 1; 
+        width: 100%; 
+        height: auto; 
         margin-bottom: 20px;
     }
 
     /* Our Plants Section adjustments */
     .our-plants {
         padding: 40px 20px;
-        margin-top: 40px; /* Adjust spacing */
-        width: 100%; /* Allow full width */
+        margin-top: 40px; 
+        width: 100%; 
     }
     .our-plants p {
-        width: auto; /* Allow paragraph to wrap */
+        width: auto; 
     }
 
     .card {
-        grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 15px;
-        margin: 20px auto; /* Adjust margin */
-        padding: 0 15px; /* Adjust padding */
+        margin: 20px auto; 
+        padding: 0 15px; 
     }
 
     .card-main {
-        width: 100%; /* Card takes full column width */
-        padding-bottom: 0; /* Remove bottom padding */
+        width: 100%; 
+        padding-bottom: 0; 
     }
     .card-main img {
         width: 100%;
         height: auto;
-        max-height: 200px; /* Smaller max height for mobile cards */
+        max-height: 200px; 
         object-fit: contain;
         margin-bottom: 10px;
     }
     .btn-primary {
-        height: 40px; /* Revert to a reasonable button height */
-        width: 100%; /* Button takes full width of card column */
-        font-size: 14px; /* Smaller font size */
+        height: 40px; 
+        width: 100%;
+        font-size: 14px; 
     }
 
     /* Flower & Plants Lover adjustments */
     .lover {
-        flex-direction: column; /* Stack image and content */
-        margin: 40px auto; /* Reduced margin */
+        flex-direction: column; 
+        margin: 40px auto; 
         gap: 20px;
         padding: 0 20px;
     }
     .flower-container {
-        max-width: 100%; /* Image takes full width */
+        max-width: 358px;
+    }
+    .flower-store-img{
+        max-width:350px ;
     }
     .f-p-lover {
-        max-width: 100%; /* Content takes full width */
-        text-align: center; /* Center text content */
+        max-width: 350px;
+        text-align: center; 
+        margin-left: 0p;
     }
     .f-p-lover h1 {
-        text-align: center; /* Center heading */
-        width: auto; /* Auto width */
-        margin: 0 auto 20px; /* Center heading */
+        text-align:start ;
+        width: auto; 
+        margin-left:  0 !important; 
+        font-size: 24px;
+       font-weight: 700;
     }
     .f-p-lover ul {
-        padding-left: 0; /* Remove list indent */
-        list-style-position: inside; /* Keep bullets inside */
-        text-align: left; /* Keep list items left-aligned within their container */
+        padding-left: 0; 
+        list-style-position: inside;
+        text-align: left; 
     }
     .f-p-lover li {
-        width: auto; /* Auto width */
-        margin: 0 auto 10px; /* Center list items if they were text-align center, but list-style-position takes precedence for bullet */
+        width: auto; 
+        margin: 0 auto 10px; 
     }
 
     /* Latest Deals adjustments */
     .Latest-Deals-margin {
         margin-top: 40px;
         margin-bottom: 40px;
-        padding: 0 15px; /* Adjust padding */
+        padding: 0 15px;
     }
 
-    .Latest-Deals h1, .Latest-Deals p {
-        font-size: 36px; /* Adjusted heading size */
+    .Latest-Deals h1 {
+        font-size: 36px; 
         line-height: 1.3;
-        width: auto; /* Allow content to wrap */
+        width: auto; 
+    }
+    .Latest-Deals p{
+        font-size: 14px;
+        line-height: 1.3;
+        text-align: center;
+        width: 336px;
+        padding: 0;
+
     }
 
     .card-container {
-        grid-template-columns: 1fr; /* Stack cards in a single column */
-        grid-auto-rows: auto; /* Auto row height */
-        gap: 15px; /* Smaller gap */
+        grid-template-columns: 1fr; 
+        grid-auto-rows: auto; 
+        gap: 15px;
     }
 
     #first-card,
-    #second-card,
     #third-card {
-        grid-column: 1; /* All cards in first column */
-        grid-row: auto; /* Auto rows */
-        height: 180px; /* Consistent height for mobile cards */
-        width: 100%; /* Card takes full width */
+        grid-column: 1;
+        grid-row: auto;
+        height: 180px; 
+        width: 100%; 
     }
     #second-card {
-        height: 180px; /* Override desktop height for consistency */
+       grid-column: 1;
+       grid-row: 3; 
+       height: 180px;
+       width: 100%;
     }
 
     .card-content h1 {
-        font-size: 24px; /* Smaller heading for promo cards */
+        font-size: 20px; 
     }
     .card-content .card-content-second {
-        font-size: 36px; /* Smaller special heading */
+        font-size: 20px; 
         margin-bottom: 10px;
     }
     .card-content .card-content-shop {
-        font-size: 16px; /* Adjust link size */
+        font-size: 16px; 
     }
 
     /* Newsletter adjustments */
     .newsletter-section {
-        min-height: 350px; /* Smaller height for mobile */
+        min-height: 350px; 
         padding: 30px 20px;
-        margin-top: 50px; /* Adjust margin */
+        margin-top: 50px; 
         margin-bottom: 50px;
     }
     .newsletter-section h2 {
-        font-size: 32px; /* Smaller heading for newsletter */
-        max-width: 100%; /* Ensure heading wraps */
+        font-size: 20px; 
+        max-width: 235px; 
     }
     .newsletter-form {
-        flex-direction: column; /* Stack input and button */
-        gap: 10px; /* Space between input and button */
-        max-width: 300px; /* Constrain form width */
-        height: auto; /* Auto height */
+        border-radius: 0;
+        max-width: 350px; 
+        height: auto;
     }
-    .newsletter-form input,
-    .newsletter-form button {
-        border-radius: 4px; /* Full rounded corners */
-        width: 100%; /* Full width for input and button */
-        padding: 12px 20px; /* Consistent padding */
+    .newsletter-form input
+     {
+         
+        width:218px ;
+        border-radius: 0; 
+        padding: 8px 20px 8px 20px;
+        
+    }
+    .newsletter-form button{
+        width: 100px;
+        text-align: start;
+        padding-left: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 19px;
+
+        
     }
     .newsletter-form input {
-        text-align: center; /* Center placeholder text */
+        text-align: start;
     }
 
     /* Footer adjustments */
@@ -1003,27 +798,27 @@ ia screen and (max-width: 576px) {
     }
 
     .footer-container {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
         gap: 30px;
-        padding: 0; /* Remove padding here as section padding handles it */
-        text-align: center; /* Center all footer content */
+        padding: 0; 
+        text-align:left; 
     }
     .footer-brand,
     .footer-links-grid,
     .footer-social {
-        max-width: 100%; /* Allow full width */
-        justify-content: center; /* Center content */
-        margin: 0 auto; /* Center blocks */
+        max-width: 100%; 
+        justify-content: left;
+        margin: 0 ; 
     }
     .footer-logo {
-        margin: 0 auto 15px; /* Center logo */
+        margin: 0 auto 15px; 
     }
     .footer-description {
-        text-align: center;
+        text-align: start;
         font-size: 13px;
     }
     .footer-links-grid {
-        grid-template-columns: 1fr; /* Stack link columns */
+        grid-template-columns: 1fr; 
         gap: 20px;
     }
     .footer-column h3 {
@@ -1034,7 +829,8 @@ ia screen and (max-width: 576px) {
         gap: 24px;
     }
     .footer-social img {
-        width: 30px;
-        height: 30px;
+        width: 18px;
+        height: 18px;
+        gap: 32px;
     }
 }
