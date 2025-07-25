@@ -173,9 +173,9 @@ nav {
 .card-main img {
     width: 270px; 
     height: 322px; 
-    max-height: 280.94px; /* Maintain original max height */
-    object-fit: contain; /* Ensure image fits without distortion */
-    margin-bottom: 15px; /*kono vabe e image er border none korte pari nai*/
+     
+    object-fit: contain; 
+    margin-bottom: 15px; 
 }
 
 .card-main h3 {
@@ -379,6 +379,10 @@ nav {
     font-size: 18px; 
     font-weight: 700;
     line-height: 1.2;
+}
+.card-content .card-content-shop-3{
+    font-size: 30px;
+
 }
 
 .shop-now {
@@ -750,7 +754,7 @@ nav {
         font-size: 20px; 
         margin-bottom: 10px;
     }
-    .card-content .card-content-shop {
+    .card-content .card-content-shop  {
         font-size: 16px; 
     }
 
